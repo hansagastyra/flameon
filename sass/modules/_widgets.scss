@@ -1,0 +1,33 @@
+/* =Widgets
+----------------------------------------------- */
+.widget-area{
+        padding: 1.5em 1em 1em;
+}
+.widget {
+	margin: 0 0 $vspacing;
+        
+	/* Make sure select elements fit in widgets */
+	select {
+		max-width: 100%;
+	}
+
+	/* Search widget */
+	.widget-search .search-submit {
+		display: none;
+	}
+        
+        ul{
+            list-style: none;
+            li:before{
+                content: "\f101";
+                font-family: 'FontAwesome';
+                float: left;
+                margin-left: -1.5em;
+            }
+        }
+}
+
+.widget-title{
+        font-weight: bold;
+        font-weight: 100;
+}

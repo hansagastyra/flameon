@@ -1,0 +1,40 @@
+/*!
+Theme Name: Flameon
+Theme URI: http://hansagastyra.esy.es/
+Author: Hans Agastyra
+Author URI: http://hansagastyra.esy.es/
+Description: Flameon is a really flexible theme for Wordpress. It's really simple and have a basic functionality for either blogging, share pictures, or anything.
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: flameon
+Tags: flexible, sidebar, widget-ready, bottombar, customizable
+
+*/
+
+// configure the style from settings
+@import 'modules/settings';
+
+// reset styles should stay at the top
+//@import 'modules/reset';
+
+// move mixins to their own partial
+@import 'modules/mixins';
+
+// feel free to add any new files you want; if you add them this list they'll be included
+@import 'modules/global';
+@import 'modules/typography';
+@import 'modules/forms';
+@import 'modules/layout';
+@import 'modules/header';
+@import 'modules/menu';
+@import 'modules/container';
+@import 'modules/content';
+@import 'modules/postformats';
+@import 'modules/media';
+@import 'modules/navigation';
+@import 'modules/comments';
+@import 'modules/widgets';
+@import 'modules/infinitescroll';
+
+@import 'modules/footer';

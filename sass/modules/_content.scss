@@ -1,0 +1,98 @@
+/* =Content
+----------------------------------------------- */
+$tag-bg: lightgrey;
+$tag-size: 0.6em;
+$author-avatar-margin: 110px;
+$avatar-border-color: lightgrey;
+
+.sticky {
+}
+.hentry {
+	margin: 0 0 3em;
+}
+.byline,
+.updated {
+	display: none;
+}
+.single, .group-blog {
+	.byline {
+		display: inline;
+	}
+}
+.page-title,
+.entry-title {
+        font-weight: bold;
+        font-weight: 100;
+}
+.single .entry-title,
+.page .entry-title,
+.page-title{
+        text-align: center;
+}
+.entry-header{
+        font-size: $tag-size;
+}
+.cat-links{
+    margin-bottom: 5px;
+}
+.tags-links{
+    a{
+        border: 1px solid;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        padding: 0 5px 2px;
+        margin-right: 2px;
+    }
+}
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $vspacing 0 0;
+}
+.single, .page{
+    .entry-header{
+        margin-top: 2em;
+    }
+    .entry-content{
+        margin-top: 2em;
+    }
+    .entry-footer{
+        margin-top: 2em;
+        font-size: $tag-size;
+        font-weight: normal;
+    }
+}
+.author-container{
+        margin-bottom: 2em;
+        font-size: 0.7em;
+        font-weight: 400;
+        min-height: $author-avatar-margin + 40px;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+}
+.author-header{
+    .avatar{
+        position: absolute;
+        border-radius: 50% 50%;
+        padding: 5px;
+        border: 1px solid $avatar-border-color;
+    }
+}
+.author-bio{
+        margin: 0 0 1em $author-avatar-margin;
+}
+.entry-footer{
+        font-size: 0.8em;
+        font-weight: bold;
+}
+.edit-link{
+        float: right;
+}
+.comments-link{
+        text-transform: uppercase;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 $vspacing;
+}
