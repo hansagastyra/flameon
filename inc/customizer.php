@@ -88,7 +88,7 @@ function theme_color_customize() {
          <style type="text/css">
              .site-title, .site-title a, .site-description{ color: <?php echo get_theme_mod('header_textcolor'); ?> }
              .theme-primary-color { background: <?php echo get_theme_mod('theme_primary_color'); ?>; }
-             .site-content a{ color: <?php echo get_theme_mod('theme_primary_color'); ?>; }
+             .site-content a, .required{ color: <?php echo get_theme_mod('theme_primary_color'); ?>; }
              .theme-secondary-color { background: <?php echo get_theme_mod('theme_secondary_color'); ?>; }
              .menu-container a{ color: <?php echo get_theme_mod('theme_menu_text_color'); ?> }
              .site-footer, .site-footer a { color: <?php echo get_theme_mod('theme_footer_text_color'); ?>; }

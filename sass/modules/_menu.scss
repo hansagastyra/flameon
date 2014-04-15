@@ -10,7 +10,6 @@
         
 	// first level
 	ul {
-                display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -18,7 +17,8 @@
 		li {
 			float: left;
 			position: relative;
-
+                        padding: 0.5em 1em;
+                        
 			a {
 				display: block;
 				text-decoration: none;
@@ -91,22 +91,13 @@
     }
 }
 /* Small menu */
-.menu-toggle,
-.main-navigation.toggled .nav-menu {
-    display: block;
+.menu-toggle {
+        display: none;
+        cursor: pointer;
 }
 
 @media all and (min-width: 40.063em){
-    .menu-toggle {
-        display: none;
-        cursor: pointer;
-    }
-    .main-navigation ul {
-        display: initial;
-        li{
-            padding: 0.5em 1em;
-        }
-    }
+
 }
 
 @media screen and (min-width: 64.063em) {

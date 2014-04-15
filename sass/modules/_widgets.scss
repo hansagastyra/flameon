@@ -31,3 +31,33 @@
         font-weight: bold;
         font-weight: 100;
 }
+
+/* Search widget */
+.widget_search {
+    .search-field{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .search-submit {
+        display: none;
+    }
+}
+/* Calendar widget */
+.widget_calendar{
+    caption{
+        font-weight: bold;
+        font-size: 1.25em;
+        margin-top: 0.2em;
+        margin-bottom: 0.5em;
+    }
+    tbody tr td{
+        text-align: center;
+        border: 1px solid;
+    }
+    th{
+        border: 1px solid;
+    }
+    tfoot tr td#next{
+        text-align: right;
+    }
+}

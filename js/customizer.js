@@ -49,7 +49,7 @@
         wp.customize( 'theme_primary_color', function( value ) {
                 value.bind( function( to ) {
                         $( '.theme-primary-color' ).css( 'background', to );
-                        $( '.site-content a' ).css( 'color', to );
+                        $( '.site-content a, .required' ).css( 'color', to );
                 } );
         } );
         // Theme Secondary Color

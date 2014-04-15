@@ -52,6 +52,15 @@ $comment-avatar-margin: $comment-avatar + 12px;
 }
 .comment-respond{
     margin-top: 1.5em;
+    .comment-form{
+        label{
+            display: inline-block;
+            min-width: 4.5em;
+        }
+        input{
+            max-width: 100%;
+        }
+    }
     .comment-form-comment{
         textarea{
             width: 100%;

@@ -298,7 +298,11 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px; }
+  padding: 3px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding-left: 15px; }
 
 textarea {
   overflow: auto;
@@ -306,7 +310,7 @@ textarea {
   padding-left: 3px;
   vertical-align: top;
   /* Improves readability and alignment in all browsers */
-  width: 98%; }
+  width: 100%; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -318,7 +322,8 @@ and open the template in the editor.
     Author     : Hans
 */
 .site-title, .site-description {
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
 /* =Menu
 ----------------------------------------------- */
@@ -329,13 +334,13 @@ and open the template in the editor.
   width: 100%;
   padding: 5px; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
     .main-navigation ul li {
       float: left;
-      position: relative; }
+      position: relative;
+      padding: 0.5em 1em; }
       .main-navigation ul li a {
         display: block;
         text-decoration: none; }
@@ -375,19 +380,10 @@ and open the template in the editor.
     display: none; }
 
 /* Small menu */
-.menu-toggle,
-.main-navigation.toggled .nav-menu {
-  display: block; }
+.menu-toggle {
+  display: none;
+  cursor: pointer; }
 
-@media all and (min-width: 40.063em) {
-  .menu-toggle {
-    display: none;
-    cursor: pointer; }
-
-  .main-navigation ul {
-    display: initial; }
-    .main-navigation ul li {
-      padding: 0.5em 1em; } }
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -433,6 +429,10 @@ and open the template in the editor.
 .page .entry-title,
 .page-title {
   text-align: center; }
+
+.page-header {
+  margin-bottom: 2em;
+  border-bottom: 1px solid; }
 
 .entry-header {
   font-size: 0.6em; }
@@ -492,6 +492,12 @@ and open the template in the editor.
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
+/*Special Page*/
+.error-404, .not-found {
+  text-align: center; }
+  .error-404 .search-submit, .not-found .search-submit {
+    display: none; }
 
 /* =Asides
 ----------------------------------------------- */
@@ -664,6 +670,11 @@ object {
 
 .comment-respond {
   margin-top: 1.5em; }
+  .comment-respond .comment-form label {
+    display: inline-block;
+    min-width: 4.5em; }
+  .comment-respond .comment-form input {
+    max-width: 100%; }
   .comment-respond .comment-form-comment textarea {
     width: 100%; }
   .comment-respond .form-submit {
@@ -699,6 +710,27 @@ object {
 .widget-title {
   font-weight: bold;
   font-weight: 100; }
+
+/* Search widget */
+.widget_search .search-field {
+  width: 100%;
+  box-sizing: border-box; }
+.widget_search .search-submit {
+  display: none; }
+
+/* Calendar widget */
+.widget_calendar caption {
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em; }
+.widget_calendar tbody tr td {
+  text-align: center;
+  border: 1px solid; }
+.widget_calendar th {
+  border: 1px solid; }
+.widget_calendar tfoot tr td#next {
+  text-align: right; }
 
 /* =Infinite Scroll
 ----------------------------------------------- */

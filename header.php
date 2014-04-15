@@ -34,8 +34,9 @@
 		<nav id="site-navigation" class="main-navigation theme-primary-color" role="navigation">
 			<div class="menu-toggle"><?php _e( 'Menu', 'flameon' ); ?></div>
 			<?php wp_nav_menu( array( 
-                            'theme_location' => 'primary',
-                            'container_class' => 'menu-container'
+                            'theme_location'    => 'primary',
+                            'container_class'   => 'menu-container',
+                            'depth'             => 1
                         ) ); ?>
                         <div class="menu-search"><?php get_search_form(); ?></div>
 		</nav><!-- #site-navigation -->

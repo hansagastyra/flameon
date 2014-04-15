@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+	<div id="primary" class="small-12 medium-8 columns content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -99,7 +99,8 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
-	</section><!-- #primary -->
-
-<?php get_sidebar(); ?>
+	</div><!-- #primary -->
+        <div id="secondary" class="small-12 medium-4 columns widget-area" role="complementary">
+            <?php get_sidebar(); ?>
+        </div>
 <?php get_footer(); ?>

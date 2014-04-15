@@ -29,6 +29,10 @@ $avatar-border-color: lightgrey;
 .page-title{
         text-align: center;
 }
+.page-header{
+        margin-bottom: 2em;
+        border-bottom: 1px solid;
+}
 .entry-header{
         font-size: $tag-size;
 }
@@ -95,4 +99,11 @@ $avatar-border-color: lightgrey;
 .page-links {
 	clear: both;
 	margin: 0 0 $vspacing;
+}
+/*Special Page*/
+.error-404,.not-found{
+    text-align: center;
+    .search-submit{
+        display: none;
+    }
 }
