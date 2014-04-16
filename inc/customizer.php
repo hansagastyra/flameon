@@ -12,7 +12,7 @@
  */
 function flameon_customize_register( $wp_customize ) {
         $wp_customize->add_setting( 'theme_primary_color', array(
-            'default'   => '#ffffff',
+            'default'   => '#ac40b2',
             'transport' => 'postMessage'
         ) );
         $wp_customize->add_setting( 'theme_secondary_color', array(
@@ -32,7 +32,7 @@ function flameon_customize_register( $wp_customize ) {
             'transport' => 'postMessage'
         ) );
         $wp_customize->add_setting( 'theme_footer_text_color', array(
-            'default'   => '#000000',
+            'default'   => '#ffffff',
             'transport' => 'postMessage'
         ) );
         $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'theme_primary_color', array(
@@ -90,7 +90,7 @@ function theme_color_customize() {
              .theme-primary-color { background: <?php echo get_theme_mod('theme_primary_color'); ?>; }
              .site-content a, .required{ color: <?php echo get_theme_mod('theme_primary_color'); ?>; }
              .theme-secondary-color { background: <?php echo get_theme_mod('theme_secondary_color'); ?>; }
-             .menu-container a{ color: <?php echo get_theme_mod('theme_menu_text_color'); ?> }
+             .main-navigation li a{ color: <?php echo get_theme_mod('theme_menu_text_color'); ?> }
              .site-footer, .site-footer a { color: <?php echo get_theme_mod('theme_footer_text_color'); ?>; }
              body, .site-content h1, .site-content h2, .site-content h3, .site-content h4,
              .site-content h5, .site-content h6, .site-content blackquote, .site-content p,

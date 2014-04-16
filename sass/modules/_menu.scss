@@ -7,7 +7,7 @@
 	float: left;
 	width: 100%;
         padding: 5px;
-        
+        text-align: center;
 	// first level
 	ul {
 		list-style: none;
@@ -75,8 +75,7 @@
 }
 
 .menu-search{
-    display: inline-block;
-    float: right;
+    display: block;
     padding-right: 0.5em;
     .search-field{
         vertical-align: middle;
@@ -97,9 +96,18 @@
 }
 
 @media all and (min-width: 40.063em){
-
+    
 }
 
 @media screen and (min-width: 64.063em) {
-
+    .main-navigation{
+        text-align: left;
+    }
+    .menu-container{
+        float: left;
+    }
+    .menu-search{
+        display: inline-block;
+        float: right;
+    }
 }

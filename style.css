@@ -332,7 +332,8 @@ and open the template in the editor.
   display: block;
   float: left;
   width: 100%;
-  padding: 5px; }
+  padding: 5px;
+  text-align: center; }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -366,8 +367,7 @@ and open the template in the editor.
   text-transform: uppercase; }
 
 .menu-search {
-  display: inline-block;
-  float: right;
+  display: block;
   padding-right: 0.5em; }
   .menu-search .search-field {
     vertical-align: middle;
@@ -384,6 +384,16 @@ and open the template in the editor.
   display: none;
   cursor: pointer; }
 
+@media screen and (min-width: 64.063em) {
+  .main-navigation {
+    text-align: left; }
+
+  .menu-container {
+    float: left; }
+
+  .menu-search {
+    display: inline-block;
+    float: right; } }
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -470,11 +480,13 @@ and open the template in the editor.
   border-top: 1px solid;
   border-bottom: 1px solid; }
 
-.author-header .avatar {
-  position: absolute;
-  border-radius: 50% 50%;
-  padding: 5px;
-  border: 1px solid lightgrey; }
+.author-header {
+  margin-top: 0.5em; }
+  .author-header .avatar {
+    position: absolute;
+    border-radius: 50% 50%;
+    padding: 5px;
+    border: 1px solid lightgrey; }
 
 .author-bio {
   margin: 0 0 1em 110px; }
@@ -675,6 +687,8 @@ object {
     min-width: 4.5em; }
   .comment-respond .comment-form input {
     max-width: 100%; }
+  .comment-respond .comment-form iframe {
+    height: initial; }
   .comment-respond .comment-form-comment textarea {
     width: 100%; }
   .comment-respond .form-submit {

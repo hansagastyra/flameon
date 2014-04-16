@@ -60,6 +60,9 @@ $comment-avatar-margin: $comment-avatar + 12px;
         input{
             max-width: 100%;
         }
+        iframe{
+            height: initial;
+        }
     }
     .comment-form-comment{
         textarea{

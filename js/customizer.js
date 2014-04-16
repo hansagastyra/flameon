@@ -69,7 +69,7 @@
         // Theme Menu Text Color
         wp.customize( 'theme_menu_text_color', function( value ) {
                 value.bind( function( to ) {
-                        $( '.menu-container a' ).css( 'color', to );
+                        $( '.main-navigation li a' ).css( 'color', to );
                 } );
         } );
 } )( jQuery );

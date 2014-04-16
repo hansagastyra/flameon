@@ -11,7 +11,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-                <div class="theme-footer-text"><?php echo get_theme_mod('theme_footer_text', 'default_value'); ?></div>
+                <div class="theme-footer-text"><?php echo get_theme_mod('theme_footer_text', ''); ?></div>
 		<div class="site-info">
 			 <?php $themeinfo = wp_get_theme(); printf( __( '%1$s theme by %2$s', 'flameon' ),
                                 '<a href="' . $themeinfo->get('ThemeURI') . '" rel="theme-name">' . $themeinfo->get('Name') . '</a>',
