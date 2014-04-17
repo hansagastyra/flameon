@@ -21,9 +21,7 @@ $comment-avatar-margin: $comment-avatar + 12px;
         -moz-border-radius: 3px;
         border-radius: 3px;
         padding: 0.8em;
-    }
-    .comment.depth-1{
-        margin-bottom: 1em;
+        margin-top: 1em;
     }
     .edit-link{
         float: none;
@@ -42,9 +40,6 @@ $comment-avatar-margin: $comment-avatar + 12px;
     }
     .comment-meta{
         min-height: $comment-avatar-margin;
-    }
-    .children{
-        margin-top: 1em;
     }
 }
 .comments-title{

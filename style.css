@@ -698,9 +698,8 @@ object {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    padding: 0.8em; }
-  .comments-area .comment.depth-1 {
-    margin-bottom: 1em; }
+    padding: 0.8em;
+    margin-top: 1em; }
   .comments-area .edit-link {
     float: none; }
   .comments-area .avatar {
@@ -714,8 +713,6 @@ object {
     margin-left: 76px; }
   .comments-area .comment-meta {
     min-height: 76px; }
-  .comments-area .children {
-    margin-top: 1em; }
 
 .comments-title {
   font-weight: 100; }
