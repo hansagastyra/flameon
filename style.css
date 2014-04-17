@@ -384,6 +384,9 @@ and open the template in the editor.
         margin-bottom: -3px; }
       .main-navigation ul li:hover > ul {
         display: block; }
+    .main-navigation ul .current_page_item a, .main-navigation ul .current-menu-item a {
+      border-bottom: 3px solid;
+      margin-bottom: -3px; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       display: none;

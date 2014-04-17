@@ -36,7 +36,10 @@
 		}
 
 		.current_page_item, .current-menu-item {
-			a {}
+                    a {
+                        border-bottom: 3px solid;
+                        margin-bottom: -3px;
+                    }
 		}
 
 		// second level
