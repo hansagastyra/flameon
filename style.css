@@ -379,6 +379,9 @@ and open the template in the editor.
       .main-navigation ul li a {
         display: block;
         text-decoration: none; }
+      .main-navigation ul li:hover > a {
+        border-bottom: 3px solid;
+        margin-bottom: -3px; }
       .main-navigation ul li:hover > ul {
         display: block; }
     .main-navigation ul ul {

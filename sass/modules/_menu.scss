@@ -26,7 +26,10 @@
 
 			// link hover
 			&:hover {
-				> a { }
+				> a { 
+                                    border-bottom: 3px solid;
+                                    margin-bottom: -3px;
+                                }
 				> ul { display: block; }
 			}
 
