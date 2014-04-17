@@ -7,8 +7,44 @@ and open the template in the editor.
     Created on : Apr 14, 2014, 9:51:00 AM
     Author     : Hans
 */
+$header-height: 400px;
+$brand-dimension: 125px;
 
 .site-title, .site-description{
-    font-weight: bold;
     text-align: center;
+    margin: 0;
+}
+.site-title{
+    font-weight: 100;
+    font-size: 3.5em;
+}
+.site-description{
+    font-size: 0.6em;
+    text-transform: uppercase;
+}
+.site-branding{
+    clear: both;
+    height: $header-height;
+    text-align: center;
+}
+.site-branding:before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+.brand-container{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+.brand-image{
+    height: $brand-dimension;
+    width: $brand-dimension;
+    -webkit-border-radius: 50% 50%;
+    -moz-border-radius: 50% 50%;
+    border-radius: 50% 50%;
+    margin: auto;
+    overflow: hidden;
 }

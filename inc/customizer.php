@@ -27,6 +27,10 @@ function flameon_customize_register( $wp_customize ) {
             'default'   => '#000000',
             'transport' => 'postMessage'
         ) );
+        $wp_customize->add_setting( 'theme_logo_image', array(
+            'default'   => '',
+            'transport' => 'postMessage'
+        ) );
         $wp_customize->add_setting( 'theme_footer_text', array(
             'default'   => '',
             'transport' => 'postMessage'
@@ -55,10 +59,19 @@ function flameon_customize_register( $wp_customize ) {
             'section'   => 'colors',
             'settings'  => 'theme_text_color'
         ) ) );
+        $wp_customize->add_section( 'theme_logo_section', array(
+            'title'     => 'Logo',
+            'priority'  => 29
+        ) );
         $wp_customize->add_section( 'theme_footer_section', array(
             'title'     => 'Footer',
             'priority'  => 30
         ) );
+        $wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize, 'theme_logo_image', array(
+            'label'     => __('Header Logo', 'flameon'),
+            'section'   => 'theme_logo_section',
+            'settings'  => 'theme_logo_image'
+        ) ) );
         $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'theme_footer_text', array(
             'label'     => __('Footer Text', 'flameon'),
             'section'   => 'theme_footer_section',
@@ -86,7 +99,7 @@ add_action( 'customize_preview_init', 'flameon_customize_preview_js' );
 function theme_color_customize() {
     ?>
          <style type="text/css">
-             .site-title, .site-title a, .site-description{ color: <?php echo get_theme_mod('header_textcolor'); ?> }
+             .brand-container, .site-title a{ color: <?php echo '#'.get_theme_mod('header_textcolor'); ?> }
              .theme-primary-color { background: <?php echo get_theme_mod('theme_primary_color'); ?>; }
              .site-content a, .required{ color: <?php echo get_theme_mod('theme_primary_color'); ?>; }
              .theme-secondary-color { background: <?php echo get_theme_mod('theme_secondary_color'); ?>; }

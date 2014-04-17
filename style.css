@@ -322,8 +322,42 @@ and open the template in the editor.
     Author     : Hans
 */
 .site-title, .site-description {
-  font-weight: bold;
+  text-align: center;
+  margin: 0; }
+
+.site-title {
+  font-weight: 100;
+  font-size: 3.5em; }
+
+.site-description {
+  font-size: 0.6em;
+  text-transform: uppercase; }
+
+.site-branding {
+  clear: both;
+  height: 400px;
   text-align: center; }
+
+.site-branding:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; }
+
+.brand-container {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%; }
+
+.brand-image {
+  height: 125px;
+  width: 125px;
+  -webkit-border-radius: 50% 50%;
+  -moz-border-radius: 50% 50%;
+  border-radius: 50% 50%;
+  margin: auto;
+  overflow: hidden; }
 
 /* =Menu
 ----------------------------------------------- */

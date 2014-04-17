@@ -21,17 +21,8 @@
 <body <?php body_class(); ?>>
 <div id="page" class="row hfeed site">
     <div id="page-container" class="small-12 medium-11 medium-centered large-10 columns">
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-                        <div class="branding-text">
-                            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                            <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-                        </div>
-                        <?php if(get_header_image() != '') : ?>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image() ?>" alt="" /></a>
-                        <?php endif; ?>
-                </div>
-		<nav id="site-navigation" class="main-navigation theme-primary-color" role="navigation">
+	<header id="masthead" class="site-header theme-primary-color" role="banner">
+                <nav id="site-navigation" class="main-navigation" role="navigation">
 			<div class="menu-toggle"><?php _e( 'Menu', 'flameon' ); ?></div>
 			<?php wp_nav_menu( array( 
                             'theme_location'    => 'primary',
@@ -40,6 +31,18 @@
                         ) ); ?>
                         <div class="menu-search"><?php get_search_form(); ?></div>
 		</nav><!-- #site-navigation -->
+		<div class="site-branding">
+                        <div class="brand-container">
+                            <div class="brand-image">
+                                <img src="<?php echo get_theme_mod('theme_logo_image') ?>"/>
+                            </div>
+                            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                            <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+                        </div>
+                        <?php if(get_header_image() != '') : ?>
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image() ?>" alt="" /></a>
+                        <?php endif; ?>
+                </div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="row site-content theme-secondary-color">
