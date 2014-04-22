@@ -67,7 +67,7 @@ function flameon_customize_register( $wp_customize ) {
             'title'     => 'Footer',
             'priority'  => 30
         ) );
-        $wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize, 'theme_logo_image', array(
+        $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'theme_logo_image', array(
             'label'     => __('Header Logo', 'flameon'),
             'section'   => 'theme_logo_section',
             'settings'  => 'theme_logo_image'
